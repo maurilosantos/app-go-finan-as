@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+  
+}
+.loading{
+    text-align: center;
+    padding-top: 20%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.loading label{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 650px) {
+    .loading{
+        padding-top: 85%;
+    }
+}

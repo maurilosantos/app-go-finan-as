@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="global.css">
+
+
+    <title>Login - Go Finança</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-info-container">
+            <h1 class="title">Entre com</h1>
+            <div class="social-login">
+                <div class="social-login-element">
+                    <img src="./assets/google.png" alt="google-image">
+                    <span>Google</span>
+                </div>
+                <div class="social-login-element">
+                    <img src="./assets/facebook.png" alt="facebook-image">
+                    <span>Facebook</span>
+                </div>
+            </div>
+            <p>ou</p>
+            <form class="inputs-container">
+                <input class="input" type="email" id="email" onchange="onChangeEmail()" placeholder="Email cadastrado">
+                <div class="error" id="email-required-error">Email é obrigatório</div>
+                <div class="error" id="email-invalid-error">Email inválido</div>
+                <input class="input" id="password" onchange="onChangePassword()" type="password" placeholder="Senha">
+                <div class="error" id="password-required-error">Senha é obrigatória</div>
+                <p>Esqueceu a senha? <button type="button" id="recover-password-button" class="clear"
+                        disabled="true" onclick="recoverPassword()">Clique aqui</button></p>
+                <button type="button" class="btn" id="login-button" disabled="true" onclick="login()">Entrar</button>
+                <p>Não tem uma conta? <button type="button" class="clear" onclick="register()">Cadastre-se</button></p>
+            </form>
+        </div>
+        <img class="image-container" src="./assets/login.jpg" alt="">
+    </div>
+    
+
+    
+    <script src="./script/validations.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.4/firebase-auth-compat.js"></script>
+
+<script src="firebase-init.js"> </script>
+<script src="loading.js"></script>
+<script src="./script/script.js"></script>
+    
+</body>
+
+</html>
