@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="stylehome.css">
+    
+
+    <title>Início Go Finanças</title>
+</head>
+
+<body>
+  <header>
+    <button class="btn" type="button" onclick="logout()">Sair</button> 
+  </header>
+  <div class="home-container">
+    <div class="home-info-container">
+    <h1 class="title">Go finanças</h1>
+    <ol id="transactions"></ol>
+     
+    <button class="fab bottom right" onclick="newTransaction()">+</button>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/9.9.4/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.9.4/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.9.4/firebase-firestore-compat.js"></script>
+
+<script src="../../firebase-init.js"> </script>
+<script src="../../auth-guard.js"></script>
+<script src="../../loading.js"></script>
+
+<script src="home.js"></script>
+
+
+
+</html>

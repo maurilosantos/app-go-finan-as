@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --login-bg:#f8f3ff;
+    --title-bg: #9089cc;
+    --button-bg: #674baf;
+    --light-pink: #1606f1;
+    --image-bg:  #eadbff ;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #9089cc;
+    
+    
+}
+
+.home-container {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 40em;
+    width: 60em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.home-info-container {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5rem;
+    border-radius: 10px;
+    background-color: var(--login-bg);
+}
+
+.title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--title-bg);
+}
+
+form {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.form-field{
+    margin: 7px 7px 7px 7px;
+}
+select{
+    width: 20%;
+    padding: 5px;
+    border: 2px solid #9bf59b;
+    border-radius: 4px;
+}
+.buttoncheck{
+background-color: #674baf; 
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.space{
+    width: 25%;
+    padding: 10px 15px;
+}
+form input{
+    border: 2px solid #9bf59b;
+    border-radius: 4px;
+}
+input:focus{
+    border: 3px solid #21e94c;
+}
+
+.btn {
+    width:10%;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    letter-spacing: 1px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-bg);
+    cursor: pointer;
+}
+
+.loading{
+    text-align: center;
+    padding-top: 20%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.loading label{
+    font-size: 20px;
+}
+
+.error{
+    color: red;
+    font-size: 0.8rem;
+    display: none;
+}
+button:disabled{
+    opacity: 0.7;
+}
+@media screen and (max-width: 1000px) {
+    .home-container {
+       
+        width: 70%;
+        
+    }
+    .home-info-container {
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .image-container {
+        display: none;
+    }  
+}
+
+@media screen and (max-width: 650px) {
+    .home-container {
+        
+        width: 90%;
+    }
+    select{
+        width: 40%;
+    }
+    .space{
+       width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home-container {
+        height: 90%;
+    }
+
+
+    .home-info-container > p {
+        margin: 0;
+    }
+    select{
+        width: 50%;
+    }
+    .space{
+        width: 50%;
+    }
+}
+
