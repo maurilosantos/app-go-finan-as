@@ -28,6 +28,11 @@ function register(){
    
         hideLoading();
     }
+function loginPage(){
+    showLoading();
+    window.location.href = "../../index.html";
+    hideLoading();
+}
 
 function validatePasswordsMatch(){
     const password = form.password().value;
